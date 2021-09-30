@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "isel.meic.tfm.fei"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "0.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'fei'
+            keyPassword 'f3i_TFM_ks*1'
+            storeFile file('fei-keystore.jks')
+            storePassword 'f3i_TFM_ks*1'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            debuggable true
+        }
+        release {
+            signingConfig signingConfigs.config
+            //minifyEnabled true
+            //shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default", "mode"
+
+    productFlavors {
+        snapshot {
+            dimension "mode"
+            versionNameSuffix ".snapshot-" + new Date().format("YYYY-MM-dd-HH:mm:ss")
+        }
+        finalVersion {
+            dimension "mode"
+        }
+        dev {
+            dimension "default"
+        }
+        prod {
+            dimension "default"
+        }
+    }
+
+    task assembleSnapshotReleaseAll {
+        dependsOn 'assembleDevSnapshotRelease'
+        dependsOn 'assembleProdSnapshotRelease'
+    }
+
+    task assembleFinalVersionReleaseAll {
+        dependsOn 'assembleDevFinalVersionRelease'
+        dependsOn 'assembleProdFinalVersionRelease'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-reactivestreams-ktx:2.3.1'
+    implementation "androidx.room:room-runtime:2.3.0"
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.4'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.12.4'
+    //implementation 'androidx.work:work-runtime-ktx:2.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    kapt 'androidx.room:room-compiler:2.3.0'
+
+    //kapt 'android.arch.persistence.room:compiler:1.1.1'
+
+    implementation "android.arch.work:work-runtime-ktx:1.0.1"
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.firebase:firebase-analytics:19.0.1'
+
+    api 'com.google.android.material:material:1.5.0-alpha02'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.firebase:firebase-messaging-directboot:22.0.0'
+}

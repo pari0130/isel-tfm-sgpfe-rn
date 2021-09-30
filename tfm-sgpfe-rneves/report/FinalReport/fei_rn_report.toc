@@ -1,0 +1,163 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\setcounter {tocdepth}{-1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\IeC {\'I}ndice}{xiii}{chapter*.10}
+\defcounter {refsection}{0}\relax 
+\setcounter {tocdepth}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Lista de Figuras}{xvii}{chapter*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Lista de Listagens}{xix}{chapter*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Lista de Abreviaturas e Siglas}{xxi}{section*.13}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Metodologia}{2}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Prototipagem}{2}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Investiga\IeC {\c c}\IeC {\~a}o}{3}{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Estrutura do Documento}{3}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Estado da Arte - Teoria de Filas de Espera}{5}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Sistema de fila de espera}{6}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Popula\IeC {\c c}\IeC {\~a}o ou Fonte}{7}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Fila de espera}{7}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Disciplina da fila de espera}{8}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Servi\IeC {\c c}o}{9}{subsection.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.5}Medidas de desempenho}{9}{subsection.2.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Processo de vida e morte}{10}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Modelos das filas de espera baseados nos processos de vida e morte}{11}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Classifica\IeC {\c c}\IeC {\~a}o da filas de espera - X/Y/Z/W}{11}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Modelo M/M/1}{12}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Modelo M/M/S}{12}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Modelo M/M/1/K}{12}{subsection.2.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Modelo M/M/S/K}{12}{subsection.2.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.6}Modelo M/M/$\infty $}{12}{subsection.2.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.7}Outros modelos}{13}{subsection.2.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Redes de filas de espera}{13}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Considera\IeC {\c c}\IeC {\~o}es finais sobre filas de espera}{13}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Moving Average}{15}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Time Series Forecasting}{15}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}M\IeC {\'e}todos de Forecasting}{15}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Moving Average}{16}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Moving Average aplicado ao projeto}{17}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}M\IeC {\'e}tricas para c\IeC {\'a}lculo da previs\IeC {\~a}o}{17}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.1}Dados do passado}{17}{subsubsection.3.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.2}Per\IeC {\'\i }odos sem atendimentos}{17}{subsubsection.3.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.3}Indiv\IeC {\'\i }duos na fila}{17}{subsubsection.3.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.4}Tipos de fila e Servidores dispon\IeC {\'\i }veis}{18}{subsubsection.3.3.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.5}Atrasos}{18}{subsubsection.3.3.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.6}Faltas}{18}{subsubsection.3.3.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}tricas com poss\IeC {\'\i }veis problemas}{19}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2.1}Toler\IeC {\^a}ncia}{19}{subsubsection.3.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2.2}M\IeC {\'u}ltiplas filas - Um servidor}{19}{subsubsection.3.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2.3}Filas de prop\IeC {\'o}sito geral}{19}{subsubsection.3.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2.4}Dia seguinte (sem retirar senha)}{20}{subsubsection.3.3.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Algoritmo de previs\IeC {\~a}o exponencial}{20}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Caracteriza\IeC {\c c}\IeC {\~a}o do Prot\IeC {\'o}tipo}{23}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Prot\IeC {\'o}tipo}{23}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Tecnologias e frameworks utilizadas}{24}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Requisitos}{25}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Ambiente/Contexto de utiliza\IeC {\c c}\IeC {\~a}o}{25}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Diagramas de Casos de Utiliza\IeC {\c c}\IeC {\~a}o}{26}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Descri\IeC {\c c}\IeC {\~a}o dos Casos de Utiliza\IeC {\c c}\IeC {\~a}o}{30}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}Diagrama de Sequ\IeC {\^e}ncia}{35}{subsection.4.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Modelo Dom\IeC {\'\i }nio}{36}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Arquitetura do Prot\IeC {\'o}tipo}{39}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Desenho}{39}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Componentes do Sistema}{39}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Intera\IeC {\c c}\IeC {\~a}o entre Componentes}{41}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Implementa\IeC {\c c}\IeC {\~a}o}{41}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Componentes}{41}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Funcionalidades}{44}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2.1}Registo}{44}{subsubsection.5.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2.2}Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o}{44}{subsubsection.5.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2.3}Visualiza\IeC {\c c}\IeC {\~a}o de Estado e Obten\IeC {\c c}\IeC {\~a}o de Senhas}{45}{subsubsection.5.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2.4}Atualiza\IeC {\c c}\IeC {\~o}es em tempo real}{47}{subsubsection.5.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Modelo de Dados}{49}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalho Futuro}{51}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Conclus\IeC {\~o}es}{51}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Trabalho Futuro}{52}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Refer\IeC {\^e}ncias}{55}{chapter*.32}

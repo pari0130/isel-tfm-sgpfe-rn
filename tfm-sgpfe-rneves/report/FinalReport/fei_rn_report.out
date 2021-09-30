@@ -1,0 +1,72 @@
+\BOOKMARK [0][-]{chapter*.10}{\315ndice}{}% 1
+\BOOKMARK [0][-]{chapter*.11}{Lista de Figuras}{}% 2
+\BOOKMARK [0][-]{chapter*.12}{Lista de Listagens}{}% 3
+\BOOKMARK [0][-]{section*.13}{Lista de Abreviaturas e Siglas}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Metodologia}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{Prototipagem}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.2}{Investiga\347\343o}{section.1.3}% 10
+\BOOKMARK [1][-]{section.1.4}{Estrutura do Documento}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Estado da Arte - Teoria de Filas de Espera}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Sistema de fila de espera}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Popula\347\343o ou Fonte}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{Fila de espera}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.3}{Disciplina da fila de espera}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.4}{Servi\347o}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.5}{Medidas de desempenho}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Processo de vida e morte}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Modelos das filas de espera baseados nos processos de vida e morte}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.3.1}{Classifica\347\343o da filas de espera - X/Y/Z/W}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.2}{Modelo M/M/1}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.3}{Modelo M/M/S}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.4}{Modelo M/M/1/K}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.5}{Modelo M/M/S/K}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.6}{Modelo M/M/}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.3.7}{Outros modelos}{section.2.3}% 27
+\BOOKMARK [1][-]{section.2.4}{Redes de filas de espera}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.5}{Considera\347\365es finais sobre filas de espera}{chapter.2}% 29
+\BOOKMARK [0][-]{chapter.3}{Moving Average}{}% 30
+\BOOKMARK [1][-]{section.3.1}{Time Series Forecasting}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.1.1}{M\351todos de Forecasting}{section.3.1}% 32
+\BOOKMARK [1][-]{section.3.2}{Moving Average}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.3}{Moving Average aplicado ao projeto}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.1}{M\351tricas para c\341lculo da previs\343o}{section.3.3}% 35
+\BOOKMARK [3][-]{subsubsection.3.3.1.1}{Dados do passado}{subsection.3.3.1}% 36
+\BOOKMARK [3][-]{subsubsection.3.3.1.2}{Per\355odos sem atendimentos}{subsection.3.3.1}% 37
+\BOOKMARK [3][-]{subsubsection.3.3.1.3}{Indiv\355duos na fila}{subsection.3.3.1}% 38
+\BOOKMARK [3][-]{subsubsection.3.3.1.4}{Tipos de fila e Servidores dispon\355veis}{subsection.3.3.1}% 39
+\BOOKMARK [3][-]{subsubsection.3.3.1.5}{Atrasos}{subsection.3.3.1}% 40
+\BOOKMARK [3][-]{subsubsection.3.3.1.6}{Faltas}{subsection.3.3.1}% 41
+\BOOKMARK [2][-]{subsection.3.3.2}{M\351tricas com poss\355veis problemas}{section.3.3}% 42
+\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Toler\342ncia}{subsection.3.3.2}% 43
+\BOOKMARK [3][-]{subsubsection.3.3.2.2}{M\372ltiplas filas - Um servidor}{subsection.3.3.2}% 44
+\BOOKMARK [3][-]{subsubsection.3.3.2.3}{Filas de prop\363sito geral}{subsection.3.3.2}% 45
+\BOOKMARK [3][-]{subsubsection.3.3.2.4}{Dia seguinte \(sem retirar senha\)}{subsection.3.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.3.3}{Algoritmo de previs\343o exponencial}{section.3.3}% 47
+\BOOKMARK [0][-]{chapter.4}{Caracteriza\347\343o do Prot\363tipo}{}% 48
+\BOOKMARK [1][-]{section.4.1}{Prot\363tipo}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.2}{Tecnologias e frameworks utilizadas}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.3}{Requisitos}{chapter.4}% 51
+\BOOKMARK [2][-]{subsection.4.3.1}{Ambiente/Contexto de utiliza\347\343o}{section.4.3}% 52
+\BOOKMARK [2][-]{subsection.4.3.2}{Diagramas de Casos de Utiliza\347\343o}{section.4.3}% 53
+\BOOKMARK [2][-]{subsection.4.3.3}{Descri\347\343o dos Casos de Utiliza\347\343o}{section.4.3}% 54
+\BOOKMARK [2][-]{subsection.4.3.4}{Diagrama de Sequ\352ncia}{section.4.3}% 55
+\BOOKMARK [1][-]{section.4.4}{Modelo Dom\355nio}{chapter.4}% 56
+\BOOKMARK [0][-]{chapter.5}{Arquitetura do Prot\363tipo}{}% 57
+\BOOKMARK [1][-]{section.5.1}{Desenho}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.1.1}{Componentes do Sistema}{section.5.1}% 59
+\BOOKMARK [2][-]{subsection.5.1.2}{Intera\347\343o entre Componentes}{section.5.1}% 60
+\BOOKMARK [1][-]{section.5.2}{Implementa\347\343o}{chapter.5}% 61
+\BOOKMARK [2][-]{subsection.5.2.1}{Componentes}{section.5.2}% 62
+\BOOKMARK [2][-]{subsection.5.2.2}{Funcionalidades}{section.5.2}% 63
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{Registo}{subsection.5.2.2}% 64
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Autentica\347\343o e Autoriza\347\343o}{subsection.5.2.2}% 65
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Visualiza\347\343o de Estado e Obten\347\343o de Senhas}{subsection.5.2.2}% 66
+\BOOKMARK [3][-]{subsubsection.5.2.2.4}{Atualiza\347\365es em tempo real}{subsection.5.2.2}% 67
+\BOOKMARK [2][-]{subsection.5.2.3}{Modelo de Dados}{section.5.2}% 68
+\BOOKMARK [0][-]{chapter.6}{Conclus\365es e Trabalho Futuro}{}% 69
+\BOOKMARK [1][-]{section.6.1}{Conclus\365es}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.2}{Trabalho Futuro}{chapter.6}% 71
+\BOOKMARK [0][-]{chapter*.32}{Refer\352ncias}{}% 72

@@ -1,0 +1,48 @@
+
+\chapter{Conclusões e Trabalho Futuro}
+\label{cha:conclusoesetrabalhofinal}
+
+Neste capitulo são apresentadas, de forma sintética, as conclusões do trabalho realizado.  
+
+São apresentadas ainda, algumas propostas para futuros desenvolvimentos.
+
+\section{Conclusões}
+
+O presente projeto foi realizado com o objetivo de desenvolver um sistema que permite a gestão centralizada de vários serviços de forma a otimizar o tempo gasto em filas de espera e nos atendimentos dos serviços institucionais. 
+
+O projeto visa suportar diversos serviços em simultâneo, o que requer bastante processamento em paralelo (e.g. cálculos de previsão diferentes para cada tipo de fila dos vários serviços) bem como grande capacidade de armazenamento. No entanto, não é realizado o estudo de viabilidade sobre a capacidade e disponibilidade do sistema, visto que o projeto está num contexto de prototipagem, onde não existe a necessidade para o dimensionamento.
+
+Para que o sistema seja bem sucedido, a adesão de clientes e instituições é importante. 
+A utilização do sistema proposto apresenta, para as instituições, vantagens em termos de custos, permitindo a cada continuar com o estabelecimento de \textit{trade-offs} entre o custo do serviço e o custo do tempo despendido pelos clientes na fila de espera. A gestão realizada pelo sistema permite uma melhoria nos atendimentos sem recursos a grandes custos, comparado com o investimento que seria necessário fazer em recursos humanos e materiais, pelas instituições para os vários postos de serviço, permitindo ainda filas de espera mais eficazes, sem grandes aglomerações, contribuindo assim para aumentar a produtividade e satisfação dos diversos clientes.
+
+A utilização de uma abordagem de prototipagem evolutiva foi importante durante o processo de desenvolvimento, com a implementação de cada funcionalidade por completo. Assim foi possível minimizar os riscos do projeto, tendo sido feitas pequenas correções/adaptações, visando melhorias/otimizações no sistema.
+
+De forma a melhorar os dados de entrada nas métricas, como por exemplo o \textit{alpha ($\alpha$)} utilizado no cálculo exponencial, é sempre necessário haver uma extração dos dados para componentes ou aplicações externas que permitem a análise dos mesmos, de modo realizar testes e verificações para alterar os valores manualmente. Assim sendo, o método \textit{Moving Average}, para a previsão de tempos, pode devolver resultados mais precisos aos utilizadores do sistema.
+
+Este projeto utiliza o simulador de serviço, para substituir e permitir simular o funcionamento dos sistemas de senhas utilizados pelos serviços institucionais. Assim sendo, o comportamento do sistema deverá permanecer igual após integração com diversos sistemas de senhas. No entanto isto faz com que seja sempre necessário o desenvolvimento de novas componentes/interfaces para ligar os serviços ao sistema.
+
+\section{Trabalho Futuro}
+
+Com o projeto finalizado, identificam-se alguns aspetos que podem ser implementados no sistema de forma a torná-lo melhor e mais robusto.
+
+Apesar do projeto estar focado em serviços institucionais, a evolução do sistema, permite abrir portas para outros tipos de serviços que recorrem a senhas e filas de espera para satisfazer aquilo que os clientes pretendem. Por exemplo, para serviços como a restauração (que permitem take-away), pode-se ter uma componente que permita a realização de pagamentos através da aplicação cliente do sistema.
+
+Para além das funcionalidades já disponibilizadas, recorrendo à utilização da localização geográfica, pode-se sugerir a um cliente a que posto de serviço é que deve ir. Isto permite realizar uma distribuição equilibrada de clientes para os diversos postos. 
+
+Outra funcionalidade seria a troca de senha entre clientes que, recorrendo também à localização geográfica e o número da senha de cada cliente, pode identificar os indivíduos ideais para a troca, com duas vertentes:
+\begin{enumerate}
+\item O utilizador solicita a troca caso não seja possível chegar a tempo.
+\item O sistema detetar que o utilizador não consegue chegar a tempo para o atendimento.
+\end{enumerate}
+
+Em relação à primeira vertente, poderia ser possível oferecer ao utilizador a possibilidade de indicar a estimativa de tempo de chegada ao serviço. Com esta possibilidade, existe sempre o risco de não haver cliente na fila, surgindo assim a oportunidade para o desenvolvimento de uma fila de espera que permite ao sistema de forma automática retirar senhas em nome do utilizador para o momento ideal. Na segunda vertente, seria necessário o acesso à localização geográfica do cliente de forma a detetar um possível atraso. 
+
+Recorrendo a algoritmos de análise de dados e de apoio à decisão, será possível desenvolver componentes integrantes do sistema que, de acordo com os resultados, altere dados de entrada nas métricas de forma automática visando conseguir os melhores resultados, sem intervenção humana.
+
+
+
+
+
+
+
+

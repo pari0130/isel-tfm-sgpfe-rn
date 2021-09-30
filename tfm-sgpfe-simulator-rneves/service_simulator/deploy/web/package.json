@@ -1,0 +1,17 @@
+{
+  "name": "fei-tfm-simulator-rn",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ronilton Neves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.16.0"
+  }
+}

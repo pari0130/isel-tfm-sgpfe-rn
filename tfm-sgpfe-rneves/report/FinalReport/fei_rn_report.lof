@@ -1,0 +1,61 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\select@language {portuguese}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Trade-off entre o custo da capacidade do servi\IeC {\c c}o e o custo do tempo de espera (retirada de Waiting Line Management: Costs Function and Service Level \cite {wlm})\relax }}{6}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sistema de filas de espera (retirada de Filas de espera \cite {filasdeespera})\relax }}{7}{figure.caption.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Filas \IeC {\'U}nicas e M\IeC {\'u}ltiplas (adaptado de Teoria das Filas \cite {teoriadasfilas})\relax }}{8}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Fun\IeC {\c c}\IeC {\~o}es de custo de servi\IeC {\c c}o e tempo de espera em rela\IeC {\c c}\IeC {\~a}o ao n\IeC {\'\i }vel do servi\IeC {\c c}o (adaptada de Waiting Line Management: Costs Function and Service Level \cite {wlm})\relax }}{10}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Diagrama de transi\IeC {\c c}\IeC {\~a}o correspondente ao processo de vida e morte (retirada de Filas de espera \cite {filasdeespera})\relax }}{11}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Prot\IeC {\'o}tipo evolutivo\relax }}{23}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Contexto de Utiliza\IeC {\c c}\IeC {\~a}o\relax }}{25}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Casos de utiliza\IeC {\c c}\IeC {\~a}o do servidor de servi\IeC {\c c}o\relax }}{26}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Casos de utiliza\IeC {\c c}\IeC {\~a}o do utilizador\relax }}{27}{figure.caption.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Casos de utiliza\IeC {\c c}\IeC {\~a}o do administrador\relax }}{28}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Casos de utiliza\IeC {\c c}\IeC {\~a}o do administrador de servi\IeC {\c c}o\relax }}{29}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagrama de sequ\IeC {\^e}ncia\relax }}{35}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Modelo de Dom\IeC {\'\i }nio\relax }}{36}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Arquitetura do sistema\relax }}{40}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Conceitos utilizados no servidor\relax }}{42}{figure.caption.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Esquema da atualiza\IeC {\c c}\IeC {\~a}o em tempo real\relax }}{47}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrama EA do modelo de dados\relax }}{49}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

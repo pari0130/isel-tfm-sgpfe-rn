@@ -1,0 +1,23 @@
+image: openjdk:8
+
+clone:
+  depth: full
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Create artifact
+          script:
+            - tar czfv application.tgz server/gradlew server/build.gradle.kts server/settings.gradle.kts server/gradle server/src/
+          artifacts:
+            - application.tgz
+      - step:
+          name: Deploy to Heroku
+          script: 
+           - pipe: atlassian/heroku-deploy:1.2.1
+             variables:
+                HEROKU_API_KEY: $HEROKU_API_KEY
+                HEROKU_APP_NAME: $HEROKU_APP_NAME
+                ZIP_FILE: 'application.tgz'
+         

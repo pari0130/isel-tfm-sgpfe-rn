@@ -1,0 +1,316 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Final Report
+%%
+%% Instituto Superior de Engenharia de Lisboa
+%% Instituto Politécnico de Lisboa
+%% Author: Ronilton Neves 39643
+%%     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[
+	msc,		% (*) msc, prepmsc, bsc, prepbsc - degree
+					% prepbsc(msc) Preparation of BSc (MSc) dissertation
+					% bsc(msc) BSc graduation report/ MSc dissertation
+					% GO TO LINE 189
+	pt,			% (*) pt, en - languages 
+	twoside,	% (*) twoside, oneside - single or double sided printing
+	12pt,		% (*) 12pt, 11pt, 10pt - use font size
+	a4paper,	% the paper size/format
+	utf8,			% (*) utf8, latin1	- Text encoding: Linux, Mac or Windows
+  onscreen, % (*) onscreen, onpaper - Page layout: screen versus paper print
+	hyperref = true,  % Hyperlinks in citations: true(*) false
+	listof=totoc
+	]{thesisisel} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  BEGINNING OF USER COSTUMIZATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%====================================================================
+% Additional packages you may want to use (comment those not needed)
+%====================================================================
+%\usepackage{colortbl}
+
+% Sort citations - ONLY if using "plain" style, otherwise keep commented
+%\usepackage[sort]{cite}
+
+% The contents of both files (acronyms and glossary) will be merged
+\InputIfFileExists{Chapters/acronyms}{%
+% File glossary.tex exists and is read
+}{%
+% File glossary.tex is not found, ignore
+}
+
+\InputIfFileExists{Chapters/glossary}{%
+% File glossary.tex exists and is read
+}{%
+% File glossary.tex is not found, ignore
+}
+
+% To register TODO notes in the text
+\usepackage[textsize=footnotesize]{todonotes}
+\setlength{\marginparwidth}{1.5cm}
+
+%
+% Define the nomenclature command that prints the symbol/abbreviation and generates a list entry at the same time.
+\newcommand*{\nom}[2]{#1\nomenclature{#1}{#2}}
+
+\usepackage[tableposition = top]{caption}
+\usepackage{booktabs}
+\usepackage{attachfile}
+%
+%====================================================================
+% Standard configuration for user included packages
+%====================================================================
+\usepackage{sty/code}
+
+% Where to look for figures
+\graphicspath{{Logo/}{Chapters/img/}} 
+% Where to find code scripts files
+\lstinputpath{Chapters/scripts}
+
+% Where to find Chapters files
+\newcommand{\chapterfiles}[1]{Chapters/#1}
+% syntax: \include{\chapterfiles{name.tex}}
+
+% Force word hyphenation
+\hyphenation{}
+
+%====================================================================
+% Some default values that you may whish to override
+%====================================================================
+%% Identification: items prefixed with (*) are the default values, as defined in "defaults.tex"
+% (*)\university{Instituto Superior de Engenharia de Lisboa}
+% (*)\faculty{Instituto Politécnico de Lisboa}
+% (*)\majorfield{Engenharia Informática}
+% (*)\universitylogo{logoisel}
+% (*)\workimage{figura ilustrativa da imagem do trabalho 8x12cm}
+
+% Use double spacing (default is one-and-half spacing) is nice
+%     for supervisor to inert revision notes and comments.
+% (*)\onehalfspacing
+% \doublespacing
+%
+%		
+%============================================================
+\input{personaldataofthesis}
+% Title of Report + author(s) + professor + date
+\hypersetup{ a4paper=true,
+             pdftitle={ \thetitle},
+             pdfauthor={ \theauthor},
+             pdfsubject={ 
+             },
+             pdfkeywords={{ }, { }, { } }
+             }
+             
+%%------------------------------------------------------------
+%% All the names inside braces below sould correspond to a file
+%%     with extension ".tex" and located in the "Chapters" folder
+%%------------------------------------------------------------
+\dedicatoryfile{dedicatory} 
+
+% Acknowledgments text. Will only be considered for final documents,
+% i.e., "bsc", "msc" and "phd", otherwise, it will be silently ignored
+\acknowledgementsfile{acknowledgements}
+
+% Resume/summary text in Portuguese
+\ptabstractfile{resumo}
+
+% Resume/summary text in English
+\enabstractfile{abstract}
+
+%%------------------------------------------------------------
+% The Table of Contents is always printed. The other lists may be omited.
+%%------------------------------------------------------------
+
+% Conditionally insert List of Figures, Tables and Code Listings
+\addlisttofrontmatter{\conditionalLoF} 	% The List of Figures. 
+%\addlisttofrontmatter{\conditionalLoT} 	% The List of Tables. 
+\addlisttofrontmatter{\conditionalLoL}		% The List of Code Listings.
+\addlisttofrontmatter{\printnoidxglossary[type=acronym]} % The List of Abreviations 
+\addlisttofrontmatter{\printnoidxglossary} %  default: type=main,  Glossary. Comment to omit.						
+%\printnoidxglossary[type=symbols] % only glossaries 
+% ---------------------------------------------------------------------------------
+% TEX CHAPTERS:
+% syntax: \chapterfile{file}
+\chapterfile{chapter1}
+\chapterfile{chapter2}
+\chapterfile{chapter3}
+\chapterfile{chapter4}
+\chapterfile{chapter5}
+\chapterfile{chapter6}
+
+\addbibresource{bibliography.bib}
+
+
+% Text appendixes. Comment if not needed
+% sintax: \appendixfile{file}
+%\appendixfile{appendix1}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+
+
+\lstdefinelanguage{Kotlin}{
+  comment=[l]{//},
+  commentstyle={\color{gray}\ttfamily},
+  emph={delegate, filter, first, firstOrNull, forEach, lazy, map, mapNotNull, println, return@},
+  emphstyle={\color{red}},
+  identifierstyle=\color{black},
+  keywords={abstract, actual, as, as?, break, by, class, companion, continue, data, do, dynamic, else, enum, expect, false, final, for, fun, get, if, import, in, interface, internal, is, null, object, override, package, private, public, return, set, super, suspend, this, throw, true, try, typealias, val, var, vararg, when, where, while, const},
+  keywordstyle={\color{NavyBlue}\bfseries},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[s]{"""*}{*"""},
+  ndkeywords={@Deprecated, @JvmField, @JvmName, @JvmOverloads, @JvmStatic, @JvmSynthetic, Array, Byte, Double, Float, Int, Integer, Iterable, Long, Runnable, Short, String},
+  ndkeywordstyle={\color{orange}\bfseries},
+  sensitive=true,
+  stringstyle={\color{ForestGreen}\ttfamily},
+}
+
+
+%%============================================================
+%%
+%%  END OF USER COSTUMIZATION
+%%
+%%============================================================
+%
+%%============================================================
+%% Please do not change below this point!!! :)
+%%============================================================
+%% Begining of document
+\begin{document}
+%\input{template.xmpdata}
+%	\includexmp{template}
+%%------------------------------------------------------------
+%% Before main text
+\frontmatter
+
+% The first front page. Repeats the front page twice 
+% \Repeat{n-times}{\command}
+%\Repeat{2}{\frontpage} % insert only 1 for Bachelor report and 2 for Master Thesis
+%\frontpageBSC % comment this line if you write a Master Thesis 
+						   % and uncomment for Bachelor Report
+
+%\InputIfFileExists{\jobname.xmpdata}{}{}
+
+% The first front page. Repeats the front page twice 
+\printcoverpage
+
+%%------------------------------------------------------------
+%% All the names inside braces below sould correspond to a file
+%%     with extension ".tex" and located in the "Chapters" folder
+%%------------------------------------------------------------
+
+% Dedicatory text. Will only be considered for final documents,
+% i.e., "bsc" and "msc", otherwise, it will be silently ignored
+\printdedicatory
+
+% Acknowledgments text. Will only be considered for final documents,
+% i.e., "bsc" and "msc", otherwise, it will be silently ignored
+% Acknowledgments will only be printed if adequate for the document type
+\printacknowledgements
+
+% Abstracts/resumes/summaries in two languages. The first abstract will
+% use the document main language and second the foreign language
+\printabstract
+%%------------------------------------------------------------
+%
+%% Always print the table of contents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
+\tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+%
+%% Print other lists of contents according to instructions given above
+\printotherlists 
+%% The List of Symbols (Nomenclature). Comment to omit.
+%\printnomenclature
+%
+% ----------------------------------------------------------------------
+%  Print Document Chapters
+% ----------------------------------------------------------------------
+%%
+% Title page: page (i)
+\printchapters
+%%
+% ----------------------------------------------------------------------
+%  Print Bibliography
+% ----------------------------------------------------------------------
+%%
+%\cleardoublepage
+
+% Include all references in .bib file, even non-cited ones...
+%\nocite{*}
+
+% Produces the bibliography section when processed by BibTeX
+% ----------------------------------------------------------------------
+%% Bibliography style
+% ----------------------------------------------------------------------
+% Replacement bibliography styles provided by 'natbib' package
+% (plainnat.bst, abbrvnat.bst, unsrtnat.bst )
+%\bibliographystyle{plainnat} % > entries ordered alphabetically
+
+% Bibliography with page numbers
+% \backrefenglish 	% english version
+%\backrefbrazil			% portuguese version
+
+% External bibliography database file in the BibTeX format
+%\cleardoublepage
+%\bibliography{bibliography} % file "bibliography.bib"
+%\addcontentsline{toc}{chapter}{\bibname} % Add entry in the table of contents as chapter
+
+\cleardoublepage
+\normalem
+\printbibliography[heading=bibintoc]
+
+%%
+% ----------------------------------------------------------------------
+%  Print appendixes, if any!  (optional)
+% ----------------------------------------------------------------------
+%%
+\cleardoublepage
+\setcounter{page}{1} \pagenumbering{roman}
+\printappendixes 
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% End of document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} 

@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">
+            @style/ActivityAnimation
+        </item>
+
+    </style>
+
+    <style name="Widget.FEI.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="Widget.FEI.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.FEI.Backdrop" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+    </style>
+
+    <style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">
+            @anim/slide_in_right
+        </item>
+        <item name="android:activityOpenExitAnimation">
+            @anim/slide_out_left
+        </item>
+        <item name="android:activityCloseEnterAnimation">
+            @anim/slide_in_left
+        </item>
+        <item name="android:activityCloseExitAnimation">
+            @anim/slide_out_right
+        </item>
+    </style>
+
+    <style name="FEI.Switch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#f1f1f1</item>
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+        <item name="android:colorForeground">#f1f1f1</item>
+    </style>
+
+    <style name="AppMaterialButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:backgroundTint">@color/materialbutton_color</item>
+    </style>
+
+
+</resources>

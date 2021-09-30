@@ -1,0 +1,55 @@
+
+\chapter{Introdução}
+\label{cha:introduction}
+
+Atualmente em serviços institucionais (Bancos, Serviços de Estrangeiros e Fronteiras, Embaixadas, Segurança Social entre outros), por vezes se verifica uma grande perda de tempo por parte dos clientes devido a longas filas de espera e/ou devido a demora nos atendimentos quando se tem uma marcação.
+
+Ao se deslocar a um serviço institucional, um cliente nunca sabe exatamente quanto tempo é que pode demorar até ser atendido nem se o atendimento será rápido. Alguns serviços apresentam informação sobre o tempo de espera previsto e/ou o tempo médio de atendimento na senha retirada pelo cliente. No entanto, na perspectiva do cliente, essa informação por vezes não é verificada, acabando por não ter o tempo de espera apresentado na senha. 
+
+Para tratar assuntos em determinados serviços de forma presencial, atualmente não se consegue evitar possíveis demoras durante os atendimentos e/ou longas filas, visto que grande parte dos serviços não fazem a recolha e tratamento de dados em tempo real e por consequência, não fornecem plataformas que apresentam o estado das filas. Com isso, um cliente pode deslocar-se a um posto de um serviço que esteja lotado, da mesma forma como pode deslocar-se para um posto vazio.
+
+No presente documento está detalhado a identificação do problema relacionado com as filas de espera, assim como as soluções e componentes desenvolvidas para a sua resolução.
+
+\section{Motivação} 
+\label{sec:introduction}
+
+Durante anos de observação e vivência de filas longas e/ou demoras nos atendimentos em certos serviços, complementando-se com as pesquisas online, constatou-se que apesar de todos os esforços na tentativa de melhorar as filas e demoras, um cliente por várias vezes se encontra sem uma estimativa de quanto tempo irá precisar para resolver os assuntos de seu interesse e é sempre forçado a realizar uma deslocação.
+
+Com as tecnologias presentes no dia-a-dia de cada indivíduo e com a facilidade de acesso e processamento de dados, o contexto deste projeto permite o desenvolvimento de um sistema com capacidade de gestão e distribuição de senhas, de acordo com as regras definidas pelas entidades de cada serviço, que consegue dar ao cliente informações referentes aos estados dos vários postos dos serviços de interesse, permitindo a este planear e realizar outras atividades sem estar “preso” a um posto a aguardar a vez de ser atendido.
+
+
+\section{Objetivos} 
+\label{sec:introduction}
+O principal objetivo deste projeto passa pela idealização, desenho e implementação de um sistema que permite a gestão centralizada de vários serviços de forma a otimizar o tempo gasto em filas de espera e nos atendimentos dos serviços institucionais. 
+Para alcançar o objetivo, o sistema tem que ser capaz de:
+\begin{itemize}
+\item Ter a capacidade de estimar quanto tempo demora até que um cliente seja atendido num determinado serviço;
+\item Adaptar-se com a entrada de novos dados, apresentando novas estimativas aos clientes;
+\item Ser flexível e escalável de forma a permitir integração de diferentes tipos de serviços;
+\end{itemize}
+
+
+\section{Metodologia} 
+\label{sec:introduction}
+
+\subsection{Prototipagem}
+\label{sec:introduction}
+De forma a permitir a idealização, desenho e implementação do sistema, realizou-se a construção de um protótipo funcional, que permite a um utilizador a visualização de todos os tipos de senhas disponíveis, recebendo atualização em tempo real do estado das senhas. Para além da visualização o utilizador pode escolher retirar a senha que pretende, continuando a receber atualizações sobre o estado da fila da senha escolhida, bem como uma notificação quando a vez de ser atendido se aproxima. 
+
+\subsection{Investigação}
+\label{sec:introduction}
+Um dos principais desafios deste projeto é a capacidade de estimar os tempos de espera de diversas filas, o que leva ao estudo dos algoritmos e metodologias existentes no que diz respeito à previsão de intervalos de tempo. Este estudo está mais virado para a área de aprendizagem automática (\textit{time series forecasting \cite{timeseries}}) e de mineração de dados \cite{tempdatamining}. Com a conclusão da investigação, foi desenvolvida uma componente que permite realizar a previsão de tempo, de acordo com os dados históricos dos tempos decorridos nos atendimentos.
+
+\section{Estrutura do Documento} 
+\label{sec:introduction}
+O presente documento encontra-se dividido em 5 capítulos:
+
+No capítulo 2, é apresentado o estado da arte de forma a contextualizar as ideias em torno do tema do trabalho.
+
+No capítulo 3, é detalhado como é que o \textit{moving average} pode ser adaptado ao projeto para previsão de tempos de espera.
+
+No capítulo 4, é feita a caracterização do protótipo desenvolvido.
+
+No capítulo 5, é descrito a arquitetura baseada para a realização do protótipo.
+
+No capítulo 6, é apresentado as conclusões obtidas ao longo da realização do projeto e é apresentado o trabalho futuro que pode ser feito de forma a evoluir o sistema.

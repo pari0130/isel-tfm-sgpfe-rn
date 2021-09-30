@@ -1,0 +1,101 @@
+
+\chapter{Moving Average}
+\label{cha:movingAverage}
+
+Neste capítulo, é detalhado como é que o \textit{moving average} pode ser adaptado ao projeto para prever tempos de espera.
+
+\section{Time Series Forecasting}
+\label{sec:timeseries}
+
+
+\textit{Time Series Forecasting} \cite{forecasting} é uma área importante da aprendizagem automática, que permite prever padrões futuros, de acordo com modelos baseados em dados observados de forma sequencial durante certo período de tempo. 
+\textit{Forecasting} é uma tarefa estatística comum, encontrada em negócios, que fornece guias para tomadas de decisões em planeamentos sobre produção, transporte e recursos humanos. 
+
+\subsection{Métodos de Forecasting}
+\label{sec:forecastingmethods}
+
+Existem dois métodos de previsão de padrões, que dependem dos dados disponíveis:
+\begin{itemize}
+	\item Qualitativo - Utilizado quando não existem dados ou quando os dados são pouco relevantes para a previsão.
+	\item Quantitativo - Utilizado quando existem dados do passado disponíveis, podendo assumir que os padrões passados vão continuar no futuro.
+\end{itemize}
+
+No âmbito deste projeto o \textbf{método quantitativo} será utilizado para prever tempos de espera em filas. 
+
+\section{Moving Average}
+\label{sec:movingaveragesection}
+
+Dados \textit{time series} podem exibir vários padrões pelo que devem ser decompostos por forma que diversas componentes permitam a obter as previsões desejadas. Estas componentes são, tendências (aumento ou redução de longo prazo associados aos dados), ciclos (dados com comportamentos aleatórios) e estação (dados influenciados por fatores externos que ocorrem sempre no mesmo período). Na decomposição de um \textit{time series}, geralmente é feito a combinação entre tendência e ciclos, resultando na componente \textit{trend-cycle}.
+
+Para este projeto, considera-se mais importante a componente \textit{trend-cycle}, visto que nas filas de espera podem ocorrer aumentos e reduções aleatórias nos tempos de atendimento ao cliente. No entanto dados passados da estação podem ser utilizados para uma previsão inicial.
+
+\textbf{Moving average} \cite{movingaverageprocesses} é um método clássico de decomposição de \textit{time series}, utilizado para filtrar todo o ruído presente em dados aleatórios (do passado), de forma a identificar tendências (valor médio). Existem assim três tipos:
+
+\begin{itemize}
+	\item \textit{SMA (Simple Moving Average)} - média aritmética dos dados recolhidos, através de cálculos simples. 
+	\item \textit{WMA (Weighted Moving Average)} - dados mais recentes/relevantes têm maior peso no cálculo do padrão, onde a soma do peso deve ser igual a 1 (100\%).
+	\item \textit{EMA (Exponential Moving Average)} - dados mais recentes também têm maior peso no cálculo do padrão, onde o peso é exponencial, podendo alterar consoante a entradas dos dados.
+\end{itemize}
+
+\textit{EMA} consegue responder mais rapidamente a mudanças nos dados, sendo considerado o melhor a identificar tendências em dados, visto que utiliza pesos exponenciais. Com isso, este tipo é escolhido para ser integrado na previsão de tempo de espera. Abaixo é possível observar a fórmula \textit{EMA}, onde $A_{t}$ é o valor no período de tempo t e \textit{alpha ($\alpha$)} o peso a ser aplicado a cada dado.
+
+\begin{center}
+$EMA_{t+1} = \alpha A_{t} + (1 - \alpha) EMA_{t}$
+
+$0 \leq \alpha \leq 1$
+\end{center}
+
+\section{Moving Average aplicado ao projeto}
+\label{sec:movingaveragesapplied}
+
+\textit{Moving average} pode ser utilizado para oferecer ao utilizador previsão de tempos de espera em diferentes tipos de serviços.
+Essa previsão é calculada tendo em conta a análise de dados passados e dados do dia corrente. A melhor forma de aplicar o \textit{moving average}, consiste em aplicar regras e restrições às métricas extraídas, de forma a permitir oferecer aos clientes os tempos de espera mais prováveis de acontecer.
+
+\subsection{Métricas para cálculo da previsão}
+
+Nesta secção é descrita as métricas utilizadas para aplicar o \textit{moving average} sobre uma fila de espera, com as regras e restrições (permitem detetar irregularidades) que permitem uma previsão mais próxima da realidade. 
+
+\subsubsection{Dados do passado}
+Para dados passados, podem ser considerados os dados de cada dia de semana por estações do ano, em que para analisar, por exemplo, o comportamento da fila de uma segunda feira, teria em conta a análise de todas as segundas feiras passadas, inseridas na estação. Desta forma é possível identificar possíveis irregularidades numa fila de espera, como por exemplo o atendimento rápido ou demorado que sai do padrão normal de atendimentos. No que diz respeito às irregularidades, deve ser possível realizar uma rápida atualização de dados e continuar a oferecer uma previsão correta sem ser afetada pela irregularidade.	
+Para períodos de atendimentos mais regulares, não haverá a necessidade de se adaptar e processar irregularidades.
+
+\subsubsection{Períodos sem atendimentos}
+A análise a ser aplicada para previsão de tempo, ignora os “buracos“ entre atendimentos, ou seja, se não houver clientes no serviço esse tempo não será considerado no cálculo das previsões, utilizando assim só os tempos de atendimentos pelos servidores.
+
+\subsubsection{Indivíduos na fila}
+Para aplicar o \textit{moving average} e consequentes análises nas filas de espera, não é necessário ter o conhecimento do número de pessoas presentes na fila, conseguindo fornecer aos utilizadores as previsões através de cálculos simples, multiplicando a previsão (média) pelo número de clientes na fila.
+
+\subsubsection{Tipos de fila e Servidores disponíveis}
+Tendo em conta as filas únicas e múltiplas, descritas no \textbf{estado da arte}, para cálculo das previsões nas filas únicas (uma fila e um servidor) e filas múltiplas (uma fila por posto de atendimento), não existe a necessidade de considerar estes tipos de fila visto que, o tempo a ser calculado vai sempre depender do servidor, sem ter a dependência e/ou influência no atendimento das outras filas, obtendo assim previsões diferentes por cada fila. No entanto, existe a necessidade de considerar filas únicas que têm N servidores, visto que o cálculo das previsões dependem dos atendimentos de cada servidor. Neste caso, é necessário ter o conhecimento de quantos servidores é que estão ativos, o que irá provocar intervalos de tempos de atendimento, tendo em conta que cada servidor pode ter a sua velocidade de trabalho. O número de servidores terá influência na previsão apresentada ao cliente. Outro aspeto a ter em conta neste caso é a verificação do servidor que iniciou o primeiro atendimento, por forma a aplicar o tempo já decorrido no atendimento à parte mais baixa do intervalo de previsão. No entanto pode haver um atendimento mais demorado por parte do primeiro servidor (considerado uma irregularidade), o que deve provocar a adaptação ou alteração do sistema, onde o próximo servidor com menos tempo de atendimento, passa a ser considerado para a parte mais baixa do intervalo. 
+
+\subsubsection{Atrasos}
+Atrasos nos atendimentos, são mais complicados de gerir pelo sistema, visto que não terá o conhecimento do tempo extra que o atendimento pode ter. Neste caso existem duas opções que podem ser tomadas. Primeiro, com a aplicação a dar um tempo por defeito que pode ser renovado quando este expirar. Segundo, realização de análise aos dados passados de forma a ter um valor possível de atraso. No entanto, com a falta de dados passados para o cálculo, a combinação das duas opções pode ser utilizada. 
+
+\subsubsection{Faltas}
+Faltas não esperadas são consideradas irregularidades pelo que deve ser aplicado um intervalo de validação (ou janela de tolerância), de forma a identificar que houve uma falta (não acidental), permitindo ao sistema informar os clientes da fila. Com um sistema de troca de senhas, será possível evitar possíveis faltas que podem ocorrer por consequência da primeira.
+
+
+\subsection{Métricas com possíveis problemas}
+
+Nesta secção é descrita as métricas que podem causar uma má previsão do tempo de espera, onde a existência de dados aleatórios com maior desfasamento é uma possibilidade, se forem utilizados da pior forma possível.
+
+\subsubsection{Tolerância}
+A tolerância de senhas e utilização da mesma num serviço é algo que, de acordo com as regras existentes pode levar a perda de informação e/ou deteção de irregularidades no sistema. Em serviços que permitem o atendimento de clientes cuja senha tenha passado a vez ([evento de tolerância] dentro do intervalo de tolerância), é necessário ter o conhecimento se essa informação é passada ou não para o sistema. Com a passagem dessa informação e do evento de tolerância, o processo de previsão irá funcionar normalmente, incluído os dados da tolerância. No caso de filas que têm regras definidas para a previsão, caso não haja a informação de tolerância, o sistema pode detetar a existência de irregularidades, visto que o atendimento de um indivíduo depois da sua vez e do anterior e/ou seguinte pode ser considerado como um atendimento.
+
+\subsubsection{Múltiplas filas - Um servidor}
+Alguns serviços fornecem a possibilidade de um servidor atender várias filas diferentes, tendo dessa forma duas possibilidades para extração da métrica a ser utilizada na previsão. A primeira, é o atendimento sempre dentro de um determinado padrão, onde assume-se a existência de indivíduos nas filas a serem atendidos pelo servidor. Com o padrão, o processamento da previsão pode ser feito como se fosse uma fila e um servidor, sem a necessidade de ter a informação de múltiplas filas. No entanto existe sempre a possibilidade de uma das filas ficar vazia, pelo que o sistema deve ser capaz de se adaptar ao novo padrão, sendo necessário a informação das filas presentes. A segunda possibilidade, é o atendimento das várias filas de forma aleatória o que provoca más previsões, por não ter uma base/padrão que permite o cálculo.
+
+\subsubsection{Filas de propósito geral}
+Filas para servidores que tratam de vários tipos de assunto, não podem existir regras e restrições para o cálculo de previsão, não existindo dessa forma irregularidades. Sendo assim, será necessário o cálculo de intervalos de previsões maiores, de forma a tentar incluir todas as possibilidades de tempo de espera reais.
+
+\subsubsection{Dia seguinte (sem retirar senha)}
+Existem serviços que permitem o atendimento de clientes no dia seguinte sem a necessidade de obtenção de uma senha. Dependendo do objetivo do cliente e servidor, em filas baseadas em regras, pode haver a criação de irregularidades ou influência no tempo de espera a ser apresentado aos restantes clientes da fila.
+
+\subsection{Algoritmo de previsão exponencial}
+
+Na listagem ~\ref{lst:ExponentialForecast}, é apresentado o algorimo \textit{moving average} exponencial, utilizado como base para o calculo da previsão. A partir deste algoritmo é possível aplicar as métricas mencionadas acima de forma a obter os melhores resuldados possíveis.
+
+\vskip1em
+\lstfromfile{Kotlin}{1-33}{Exponential Forecast}{ExponentialForecast}{showlines=true,morekeywords={begin,System,out,print},numbers=left, firstnumber=1}{ExponentialForecast.kt}
+
+

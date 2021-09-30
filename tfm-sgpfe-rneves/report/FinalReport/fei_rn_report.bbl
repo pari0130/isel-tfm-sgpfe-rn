@@ -1,0 +1,373 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{debug/global/}
+  \entry{androidrecomm}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Guide to app architecture | Android Developers {@ONLINE}}
+    \verb{url}
+    \verb https://developer.android.com/jetpack/guide
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{filasdeespera}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=FJFO}{%
+         family={FEUP},
+         familyi={F\bibinitperiod},
+         given={José Fernando\bibnamedelima Oliveira},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJFO1}
+    \strng{fullhash}{FJFO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Filas de espera}
+    \field{year}{1998}
+  \endentry
+
+  \entry{firebase}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Firebase Cloud Messaging {@ONLINE}}
+    \verb{url}
+    \verb https://firebase.google.com/docs/cloud-messaging
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{flutter}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Flutter {@ONLINE}}
+    \verb{url}
+    \verb https://flutter.dev
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{forecasting}{online}{}
+    \name{author}{2}{}{%
+      {{hash=HRJ}{%
+         family={Hyndman},
+         familyi={H\bibinitperiod},
+         given={Rob\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=AG}{%
+         family={Athanasopoulos},
+         familyi={A\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HRJAG1}
+    \strng{fullhash}{HRJAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Forecasting: Principles and Practice {@ONLINE}}
+    \verb{url}
+    \verb https://otexts.com/fpp2/
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{heroku}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Heroku {@ONLINE}}
+    \verb{url}
+    \verb https://www.heroku.com
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{jdbc}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Data access with JDBC {@ONLINE}}
+    \verb{url}
+    \verb https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-r
+    \verb eference/html/jdbc.html
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{movingaverageprocesses}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PCEM}{%
+         family={Pearce},
+         familyi={P\bibinitperiod},
+         given={C.\bibnamedelima E.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PCEM1}
+    \strng{fullhash}{PCEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Moving Average Processes in Queueing Theory}
+    \list{institution}{1}{%
+      {The Australian National University Canberra}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{1965}
+  \endentry
+
+  \entry{mvc}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Model View Controller {@ONLINE}}
+    \verb{url}
+    \verb https://martinfowler.com/eaaDev/uiArchs.html#ModelViewController
+    \endverb
+    \field{year}{2006}
+  \endentry
+
+  \entry{mvvm}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{The Model-View-ViewModel Pattern {@ONLINE}}
+    \verb{url}
+    \verb https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-app
+    \verb lication-patterns/mvvm
+    \endverb
+    \field{month}{07}
+    \field{year}{2017}
+  \endentry
+
+  \entry{nodejs}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Node.JS {@ONLINE}}
+    \verb{url}
+    \verb https://nodejs.org/en/
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{observerpattern}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Observer Design Pattern {@ONLINE}}
+    \verb{url}
+    \verb https://docs.microsoft.com/en-us/dotnet/standard/events/observer-desi
+    \verb gn-pattern
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{operationsresearch}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LFSHGJ}{%
+         family={Lieberman},
+         familyi={L\bibinitperiod},
+         given={Frederick S. Hillier / Gerald\bibnamedelima J.},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod H\bibinitperiod
+  \bibinitperiod G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{LFSHGJ1}
+    \strng{fullhash}{LFSHGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Introduction To Operations Research}
+    \field{year}{2001}
+  \endentry
+
+  \entry{poissondistribuition}{online}{}
+    \name{author}{1}{}{%
+      {{hash=eJPRK}{%
+         prefix={e},
+         prefixi={e},
+         family={Jim\bibnamedelima Poserina},
+         familyi={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Robert\bibnamedelima Kissell},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JPRKe1}
+    \strng{fullhash}{JPRKe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Poisson Distribution in Optimal Sports Math, Statistics, and
+  Fantasy {@ONLINE}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/topics/mathematics/poisson-distribution
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{publishsubscribe}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Publisher-Subscriber pattern {@ONLINE}}
+    \verb{url}
+    \verb https://docs.microsoft.com/en-us/azure/architecture/patterns/publishe
+    \verb r-subscriber
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{rgpd}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Proteção de dados pessoais {@ONLINE}}
+    \verb{url}
+    \verb https://eur-lex.europa.eu/legal-content/PT/TXT/HTML/?uri=LEGISSUM:310
+    \verb 401_2
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{siren}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Siren: a hypermedia specification for representing entities
+  {@ONLINE}}
+    \verb{url}
+    \verb https://github.com/kevinswiber/siren
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{spring}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Spring Boot {@ONLINE}}
+    \verb{url}
+    \verb https://spring.io/projects/spring-boot
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{springmvc}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Spring MVC {@ONLINE}}
+    \verb{url}
+    \verb https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-r
+    \verb eference/html/mvc.html
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{tempdatamining}{online}{}
+    \name{author}{1}{}{%
+      {{hash=YY}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Yun},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YY1}
+    \strng{fullhash}{YY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Temporal Data Mining {@ONLINE}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/topics/computer-science/temporal-data-m
+    \verb ining
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{teoriadasfilas}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Teoria das filas {@ONLINE}}
+    \verb{url}
+    \verb https://pt.wikipedia.org/wiki/Teoria_das_filas
+    \endverb
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
+
+  \entry{timeseries}{online}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Brownlee},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{What Is Time Series Forecasting? {@ONLINE}}
+    \verb{url}
+    \verb https://machinelearningmastery.com/time-series-forecasting/
+    \endverb
+    \field{month}{08}
+    \field{year}{2019}
+  \endentry
+
+  \entry{wlm}{online}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Waiting Line Management: Costs Function and Service Level
+  {@ONLINE}}
+    \verb{url}
+    \verb https://www.shmula.com/waiting-line-management/7217/
+    \endverb
+    \field{month}{11}
+    \field{year}{2010}
+  \endentry
+\endsortlist
+\endinput

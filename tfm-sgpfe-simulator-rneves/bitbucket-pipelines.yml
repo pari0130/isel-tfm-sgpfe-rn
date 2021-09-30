@@ -1,0 +1,21 @@
+image: 
+clone:
+  depth: full
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: 'Create artifact'
+          script:
+            - tar czfv application.tgz service_simulator/deploy/web
+          artifacts:
+            - application.tgz
+      - step:
+          name: 'Deployment to Heroku'
+          script:
+            - pipe: atlassian/heroku-deploy:1.2.0
+              variables:
+                  HEROKU_API_KEY: $HEROKU_API_KEY
+                  HEROKU_APP_NAME: $HEROKU_APP_NAME
+                  ZIP_FILE: 'application.tgz'
